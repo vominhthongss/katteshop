@@ -1,3 +1,6 @@
+
+//setCookie("username","");
+//checkCookie();
 var indexCurrent=0;
 autoSlide();
 function plusSlide(tranNum){
@@ -49,5 +52,35 @@ function autoSlide(){
     y[indexCurrent-1].className+=" active";
     setTimeout(autoSlide,3000); 
 }
-
-
+// function setCookie(cname,cvalue) {
+//     document.cookie = cname + "=" + cvalue + ";path=/";
+//   }
+  
+//   function getCookie(cname) {
+//     var name = cname + "=";
+//     var decodedCookie = decodeURIComponent(document.cookie);
+//     var ca = decodedCookie.split(';');
+//     for(var i = 0; i < ca.length; i++) {
+//       var c = ca[i];
+//       while (c.charAt(0) == ' ') {
+//         c = c.substring(1);
+//       }
+//       if (c.indexOf(name) == 0) {
+//         return c.substring(name.length, c.length);
+//       }
+//     }
+//     return "";
+//   }
+  
+//   function checkCookie() {
+//     var user=getCookie("username");
+//     if (user != "") {
+//       alert("Chào mừng " + user);
+//     } 
+//     else {
+//        user = prompt("Nhập tên:","");
+//        if (user != "" && user != null) {
+//          setCookie("username", user);
+//        }
+//     }
+//   }

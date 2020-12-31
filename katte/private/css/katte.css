@@ -1,0 +1,526 @@
+body {
+    background-color: #999;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.dangxuat-btn {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: solid 2px brown;
+    background-color: #666;
+    padding: 10px;
+}
+.gim {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+    background-color: #444;
+}
+
+.footer {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    margin-top: 80px;
+}
+.tenshop {
+    float: left;
+    padding: 12px 14px;
+}
+
+.tenshop-name a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.fb img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.customer {
+    float: right;
+    font-size: 16px;
+    padding: 12px 14px;
+}
+.customer a {
+    text-decoration: none;
+    color: black;
+}
+.bill {
+    float: right;
+    margin-top: 10px;
+}
+.bill img {
+    width: 40px;
+    padding: 2px;
+}
+.bill:hover {
+    background-color: brown;
+    border-radius: 2px;
+}
+/*
+login
+*/
+.loginform {
+    display: block;
+    margin-top: 12%;
+    margin-left: 36%;
+    background-color: whitesmoke;
+    height: 330px;
+    width: 25%;
+    z-index: 9;
+    position: fixed;
+    border: 10px solid brown;
+}
+.loginform h3 {
+    text-align: center;
+    font-size: 30px;
+}
+.loginform p {
+    font-size: 20px;
+}
+/*
+regis
+*/
+.regisform {
+    display: none;
+    margin-top: 0px;
+    margin-left: 36%;
+    background-color: whitesmoke;
+    height: 550px;
+    width: 25%;
+    z-index: 9;
+    position: fixed;
+    border: 5px solid #444;
+}
+.regisform h3 {
+    text-align: center;
+}
+.regisform p {
+    font-size: 12px;
+}
+.regisform-content div {
+    margin-left: 16%;
+}
+.loginform-content div {
+    margin-left: 16%;
+}
+.nutdkdn {
+    background-color: brown;
+    font-size: 20px;
+}
+.nuttat {
+    float: right;
+    border: solid 1px #333;
+    outline: none;
+}
+.nuttat:hover {
+    background-color: brown;
+}
+/* popup đăng ký */
+.popup {
+    display: block;
+    margin-top: 10%;
+    margin-left: 36%;
+    background-color: whitesmoke;
+    height: 120px;
+    width: 25%;
+    z-index: 9;
+    position: fixed;
+    border: 5px solid #444;
+}
+.popup h3 {
+    text-align: center;
+}
+.noidungthongbao {
+    margin-left: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    /* border-top: solid 1px black;
+    border-bottom: solid 1px black; */
+}
+
+.nav a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 16px 18px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+.nav a:hover {
+    background: brown;
+}
+.sanpham {
+    float: left;
+}
+.sanpham-btn:hover {
+    background-color: brown;
+}
+.sanpham-btn {
+    padding: 16px 18px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #444;
+    cursor: pointer;
+}
+.sanpham:hover .sanpham-list {
+    display: block;
+    background-color: brown;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sanpham-list a:hover {
+    background-color: whitesmoke;
+
+    /* color: whitesmoke; */
+}
+.sanpham:hover .sanpham-btn {
+    background-color: brown;
+}
+.sanpham-list {
+    position: absolute;
+    display: none;
+}
+.sanpham-list a {
+    padding: 16px 50px;
+    text-align: center;
+    background-color: brown;
+    display: block;
+    width: 58px;
+    font-size: 18px;
+}
+.search {
+    background-color: #444;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 700px;
+    height: 50px;
+    font-size: 20px;
+}
+.search button {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+.chuchay {
+    font-size: 16px;
+    background-color: brown;
+}
+/* chỗ này tính từ slideshow trở xuống */
+.slideshow {
+    float: left;
+    width: 100%;
+}
+.slides img {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.prev {
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    padding: 10px;
+}
+.prev:hover {
+    background-color: brown;
+}
+.next {
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.next:hover {
+    background-color: brown;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: #444;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+.active,
+.dot:hover {
+    background-color: brown;
+}
+
+/* khung sản phẩm */
+.navnho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.navnho a {
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.navnho a:hover {
+    background-color: brown;
+}
+.khungsp {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cotsp {
+    background-color: white;
+    width: 25%;
+    display: table;
+    float: left;
+    cursor: pointer;
+}
+.cotsp h4 {
+    text-align: center;
+}
+.cotsp h3 {
+    text-align: center;
+}
+.cotsp img {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*chi tiết sản phẩm */
+.khungchitietsp {
+    width: 40%;
+    float: left;
+}
+.khungchitietsp h3 {
+    text-align: center;
+}
+.khungchitietsp h4 {
+    text-align: center;
+}
+.btnmua {
+    font-size: 20px;
+    width: 49%;
+    height: 40px;
+    color: whitesmoke;
+    background-color: brown;
+    border-radius: 10px;
+    margin-left: 26%;
+    cursor: pointer;
+}
+.btnthem {
+    font-size: 20px;
+    width: 49%;
+    height: 40px;
+    color: whitesmoke;
+    background-color: brown;
+    border-radius: 10px;
+    margin-left: 26%;
+}
+.khungchitietsp img {
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thongtinchitietsp {
+    margin-top: 10px;
+    width: 60%;
+    float: left;
+}
+.thongtinchitietsp h3 {
+    text-align: center;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+}
+.thongtinchitietsp h2 {
+    padding: 12px 14px;
+    text-align: center;
+}
+.giasp {
+    color: red;
+}
+.oSoLuong {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40;
+    font-size: 24px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nutSoLuong {
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    font-size: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Ô giỏ hàng */
+.oGioHang {
+    width: 100px;
+}
+.formgiohang {
+    float: left;
+    font-size: 20px;
+    margin-left: 0;
+
+    width: 100%;
+}
+.formgiohang p {
+    margin-left: 10px;
+}
+.nutgiohang {
+    float: left;
+    background-color: brown;
+    font-size: 22px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.tongtien {
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    font-size: 40px;
+    text-align: center;
+    color: brown;
+}
+.tb {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.tb th {
+    border: 1px solid black;
+}
+.tb td {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+    .customer {
+        font-size: 14px;
+    }
+    .nav {
+        width: 100%;
+        right: 0;
+    }
+    .nav a {
+        font-size: 16px;
+        text-align: center;
+    }
+    .nav button {
+        font-size: 16px;
+    }
+    .search {
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search input {
+        width: 75%;
+    }
+    .search button {
+        width: 20%;
+    }
+    .slides img {
+        height: 200px;
+    }
+    .sanpham:hover .sanpham-list {
+        display: block;
+        width: 100%;
+    }
+    .sanpham-list a {
+        width: max-content;
+    }
+    .sanpham-list a:hover {
+        width: max-content;
+    }
+    .cotsp {
+        width: 100%;
+    }
+    .khungchitietsp {
+        width: 100%;
+    }
+    .thongtinchitietsp {
+        width: 100%;
+    }
+    .btnmua {
+        height: 60px;
+    }
+    .btnthem {
+        height: 60px;
+    }
+    .loginform {
+        width: 50%;
+        height: 260px;
+        margin-left: 23%;
+        padding: 10px;
+    }
+    .regisform {
+        width: 50%;
+        height: 600px;
+        margin-left: 23%;
+        padding: 10px;
+    }
+    .onhap {
+        width: 120px;
+    }
+}
